@@ -1,0 +1,14 @@
+name: local_transform
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - pip:
+      - dgllife
+  - conda-forge::python=3.6
+  - conda-forge::pip
+  - conda-forge::rdkit
+  - pytorch::cudatoolkit=11.3
+  - pytorch::pytorch
+  - conda-forge::dglteam
+  - conda-forge::dgl-cuda11.3
