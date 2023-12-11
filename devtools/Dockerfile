@@ -16,12 +16,12 @@ COPY ./scripts /scripts
 COPY ./Synthesis.py /Synthesis.py
 COPY ./tmp.py /tmp.py
 COPY ./run_reaction.sh /run_reaction.sh
+COPY ./LocalTemplate /LocalTemplate
+COPY ./data /data
+COPY ./models /models
 
 ENV PYTHONPATH='/backend'
-ENV DJANGO_SETTINGS_MODULE='backend.settings'
 ENV CPU_ONLY 1
 ENV LC_ALL C.UTF-8
 ENV LANG C.UTF-8
 
-ENTRYPOINT ["run_reaction.sh"]
-CMD ["bash", "devtools/runscripts/run_gunicorn.sh"]
