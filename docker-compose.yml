@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  gunicorn:
+    image: gcr.io/ddag-gke/localtransform:latest
+    build:
+      context: .
+      dockerfile: devtoolsDockerfile
